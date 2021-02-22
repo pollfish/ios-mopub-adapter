@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F2A9AD4BE37D9702CCB9A80 /* libPods-PollfishMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA264F130C2FA673D00E536B /* libPods-PollfishMoPubAdapter.a */; };
 		8094FF1225DFE152008EA38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094FF1125DFE152008EA38D /* AppDelegate.swift */; };
 		8094FF1425DFE152008EA38D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094FF1325DFE152008EA38D /* SceneDelegate.swift */; };
 		8094FF1625DFE152008EA38D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094FF1525DFE152008EA38D /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		8094FF4D25DFE26B008EA38D /* PollfishMoPubAdapterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094FF4825DFE26B008EA38D /* PollfishMoPubAdapterInfo.swift */; };
 		8094FF4E25DFE26B008EA38D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094FF4925DFE26B008EA38D /* Constants.swift */; };
 		8094FF4F25DFE26B008EA38D /* PollfishAdapterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094FF4A25DFE26B008EA38D /* PollfishAdapterConfiguration.swift */; };
+		8FAA2B1BC824EEC162902075 /* libPods-PollfishMobPubAdapterExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E9FE26120819011B25C779 /* libPods-PollfishMobPubAdapterExampleSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02E9FE26120819011B25C779 /* libPods-PollfishMobPubAdapterExampleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PollfishMobPubAdapterExampleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1B5C5C0AFD5C502028B903 /* Pods-PollfishMoPubAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollfishMoPubAdapter.debug.xcconfig"; path = "Target Support Files/Pods-PollfishMoPubAdapter/Pods-PollfishMoPubAdapter.debug.xcconfig"; sourceTree = "<group>"; };
+		508EB132271370C797E61E53 /* Pods-PollfishMobPubAdapterExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollfishMobPubAdapterExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-PollfishMobPubAdapterExampleSwift/Pods-PollfishMobPubAdapterExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		8094FF0F25DFE152008EA38D /* PollfishMobPubAdapterExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollfishMobPubAdapterExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8094FF1125DFE152008EA38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8094FF1325DFE152008EA38D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,9 @@
 		8094FF4825DFE26B008EA38D /* PollfishMoPubAdapterInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollfishMoPubAdapterInfo.swift; sourceTree = "<group>"; };
 		8094FF4925DFE26B008EA38D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8094FF4A25DFE26B008EA38D /* PollfishAdapterConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollfishAdapterConfiguration.swift; sourceTree = "<group>"; };
+		94A00394D3FCE3F834370897 /* Pods-PollfishMobPubAdapterExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollfishMobPubAdapterExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-PollfishMobPubAdapterExampleSwift/Pods-PollfishMobPubAdapterExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		9D07154248DF31685BD65441 /* Pods-PollfishMoPubAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollfishMoPubAdapter.release.xcconfig"; path = "Target Support Files/Pods-PollfishMoPubAdapter/Pods-PollfishMoPubAdapter.release.xcconfig"; sourceTree = "<group>"; };
+		BA264F130C2FA673D00E536B /* libPods-PollfishMoPubAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PollfishMoPubAdapter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8094FF3125DFE17D008EA38D /* PollfishMoPubAdapter.framework in Frameworks */,
+				8FAA2B1BC824EEC162902075 /* libPods-PollfishMobPubAdapterExampleSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,18 +88,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2A9AD4BE37D9702CCB9A80 /* libPods-PollfishMoPubAdapter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53A40C88D98E98BD90179E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA264F130C2FA673D00E536B /* libPods-PollfishMoPubAdapter.a */,
+				02E9FE26120819011B25C779 /* libPods-PollfishMobPubAdapterExampleSwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8094FEEA25DFE116008EA38D = {
 			isa = PBXGroup;
 			children = (
 				8094FF1025DFE152008EA38D /* PollfishMobPubAdapterExampleSwift */,
 				8094FF2B25DFE17D008EA38D /* PollfishMoPubAdapter */,
 				8094FEF425DFE116008EA38D /* Products */,
+				DBDD4056B9CF2F529E5CB5F5 /* Pods */,
+				53A40C88D98E98BD90179E0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +152,18 @@
 			path = PollfishMoPubAdapter;
 			sourceTree = "<group>";
 		};
+		DBDD4056B9CF2F529E5CB5F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E1B5C5C0AFD5C502028B903 /* Pods-PollfishMoPubAdapter.debug.xcconfig */,
+				9D07154248DF31685BD65441 /* Pods-PollfishMoPubAdapter.release.xcconfig */,
+				508EB132271370C797E61E53 /* Pods-PollfishMobPubAdapterExampleSwift.debug.xcconfig */,
+				94A00394D3FCE3F834370897 /* Pods-PollfishMobPubAdapterExampleSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -149,10 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8094FF2025DFE154008EA38D /* Build configuration list for PBXNativeTarget "PollfishMobPubAdapterExampleSwift" */;
 			buildPhases = (
+				26FCDB767D8E7AC3B687CDBF /* [CP] Check Pods Manifest.lock */,
 				8094FF0B25DFE152008EA38D /* Sources */,
 				8094FF0C25DFE152008EA38D /* Frameworks */,
 				8094FF0D25DFE152008EA38D /* Resources */,
 				8094FF3625DFE17D008EA38D /* Embed Frameworks */,
+				233F938AE03D00E35C94C9E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,10 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8094FF3325DFE17D008EA38D /* Build configuration list for PBXNativeTarget "PollfishMoPubAdapter" */;
 			buildPhases = (
+				2A4ED81344E9A9A978DBB6D8 /* [CP] Check Pods Manifest.lock */,
 				8094FF2525DFE17D008EA38D /* Headers */,
 				8094FF2625DFE17D008EA38D /* Sources */,
 				8094FF2725DFE17D008EA38D /* Frameworks */,
 				8094FF2825DFE17D008EA38D /* Resources */,
+				23C89D129E5DE4D6CE6616F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +275,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233F938AE03D00E35C94C9E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PollfishMobPubAdapterExampleSwift/Pods-PollfishMobPubAdapterExampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PollfishMobPubAdapterExampleSwift/Pods-PollfishMobPubAdapterExampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PollfishMobPubAdapterExampleSwift/Pods-PollfishMobPubAdapterExampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23C89D129E5DE4D6CE6616F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PollfishMoPubAdapter/Pods-PollfishMoPubAdapter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PollfishMoPubAdapter/Pods-PollfishMoPubAdapter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PollfishMoPubAdapter/Pods-PollfishMoPubAdapter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26FCDB767D8E7AC3B687CDBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PollfishMobPubAdapterExampleSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A4ED81344E9A9A978DBB6D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PollfishMoPubAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8094FF0B25DFE152008EA38D /* Sources */ = {
@@ -410,6 +528,7 @@
 		};
 		8094FF2125DFE154008EA38D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508EB132271370C797E61E53 /* Pods-PollfishMobPubAdapterExampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -430,6 +549,7 @@
 		};
 		8094FF2225DFE154008EA38D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A00394D3FCE3F834370897 /* Pods-PollfishMobPubAdapterExampleSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -450,6 +570,7 @@
 		};
 		8094FF3425DFE17D008EA38D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1B5C5C0AFD5C502028B903 /* Pods-PollfishMoPubAdapter.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +601,7 @@
 		};
 		8094FF3525DFE17D008EA38D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D07154248DF31685BD65441 /* Pods-PollfishMoPubAdapter.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

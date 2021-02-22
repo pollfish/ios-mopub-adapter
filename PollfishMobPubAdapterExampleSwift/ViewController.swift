@@ -7,7 +7,7 @@
 
 import UIKit
 import MoPubSDK
-import MoPub_AdMob_Adapters
+//import MoPub_AdMob_Adapters
 //import MoP
 //import MoPub_Vungle_Adapters
 import PollfishMoPubAdapter
@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         let config = MPMoPubConfiguration(adUnitIdForAppInitialization: "c5d30645f8ee422c81ceb41bb651d190")
 
         config.additionalNetworks = [
-            PollfishAdapterConfiguration.self,
-            GoogleAdMobAdapterConfiguration.self]
+            PollfishAdapterConfiguration.self ]
+            //GoogleAdMobAdapterConfiguration.self]
         config.loggingLevel = .debug
         
         ATTrackingManager.requestTrackingAuthorization { status in
