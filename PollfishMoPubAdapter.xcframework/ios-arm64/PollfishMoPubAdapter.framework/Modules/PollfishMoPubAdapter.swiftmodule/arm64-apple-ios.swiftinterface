@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PollfishMoPubAdapter
+import Foundation
+import MoPubSDK
+import Pollfish
+@_exported import PollfishMoPubAdapter
+import Swift
+@_inheritsConvenienceInitializers @objc(MoPubRewardedAdPollifsh) public class MoPubRewardedAdPollifsh : MoPubSDK.MPFullscreenAdAdapter, MoPubSDK.MPThirdPartyFullscreenAdAdapter {
+  @objc override dynamic public var isRewardExpected: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func requestAd(withAdapterInfo info: [Swift.AnyHashable : Any], adMarkup: Swift.String?)
+  @objc override dynamic public func presentAd(from viewController: UIKit.UIViewController)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class PollfishAdapterConfiguration : MoPubSDK.MPBaseAdapterConfiguration {
+  @objc override dynamic public var adapterVersion: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public var biddingToken: Swift.String? {
+    @objc get
+  }
+  @objc override dynamic public var moPubNetworkName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public var networkSdkVersion: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public func initializeNetwork(withConfiguration configuration: [Swift.String : Any]?, complete: ((Swift.Error?) -> Swift.Void)? = nil)
+  @objc deinit
+  @objc override dynamic public init()
+}

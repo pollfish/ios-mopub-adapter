@@ -1,0 +1,11 @@
+framework module PollfishMoPubAdapter {
+  umbrella header "PollfishMoPubAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module PollfishMoPubAdapter.Swift {
+    header "PollfishMoPubAdapter-Swift.h"
+    requires objc
+}

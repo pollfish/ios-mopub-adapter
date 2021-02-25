@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8085EC9A25E7D49800BDD358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8085EC9925E7D49800BDD358 /* AppDelegate.m */; };
+		8085ECA025E7D49800BDD358 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8085EC9F25E7D49800BDD358 /* ViewController.m */; };
+		8085ECA325E7D49800BDD358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8085ECA125E7D49800BDD358 /* Main.storyboard */; };
+		8085ECA525E7D49A00BDD358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8085ECA425E7D49A00BDD358 /* Assets.xcassets */; };
+		8085ECA825E7D49A00BDD358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8085ECA625E7D49A00BDD358 /* LaunchScreen.storyboard */; };
+		8085ECAB25E7D49A00BDD358 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECAA25E7D49A00BDD358 /* main.m */; };
+		8085ECC125E7D63D00BDD358 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECC025E7D63D00BDD358 /* File.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8085EC9525E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollfishMoPubAdapterExampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8085EC9825E7D49800BDD358 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8085EC9925E7D49800BDD358 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8085EC9E25E7D49800BDD358 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8085EC9F25E7D49800BDD358 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8085ECA225E7D49800BDD358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8085ECA425E7D49A00BDD358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8085ECA725E7D49A00BDD358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8085ECA925E7D49A00BDD358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8085ECAA25E7D49A00BDD358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8085ECBF25E7D63C00BDD358 /* PollfishMoPubAdapterExampleObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PollfishMoPubAdapterExampleObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		8085ECC025E7D63D00BDD358 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8085EC9225E7D49800BDD358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8085EC8C25E7D49800BDD358 = {
+			isa = PBXGroup;
+			children = (
+				8085EC9725E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC */,
+				8085EC9625E7D49800BDD358 /* Products */,
+				9DC013D9795D85677DDDF9E2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8085EC9625E7D49800BDD358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8085EC9525E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8085EC9725E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC */ = {
+			isa = PBXGroup;
+			children = (
+				8085EC9825E7D49800BDD358 /* AppDelegate.h */,
+				8085EC9925E7D49800BDD358 /* AppDelegate.m */,
+				8085EC9E25E7D49800BDD358 /* ViewController.h */,
+				8085EC9F25E7D49800BDD358 /* ViewController.m */,
+				8085ECA125E7D49800BDD358 /* Main.storyboard */,
+				8085ECA425E7D49A00BDD358 /* Assets.xcassets */,
+				8085ECA625E7D49A00BDD358 /* LaunchScreen.storyboard */,
+				8085ECA925E7D49A00BDD358 /* Info.plist */,
+				8085ECAA25E7D49A00BDD358 /* main.m */,
+				8085ECC025E7D63D00BDD358 /* File.swift */,
+				8085ECBF25E7D63C00BDD358 /* PollfishMoPubAdapterExampleObjC-Bridging-Header.h */,
+			);
+			path = PollfishMoPubAdapterExampleObjC;
+			sourceTree = "<group>";
+		};
+		9DC013D9795D85677DDDF9E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8085EC9425E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8085ECAE25E7D49A00BDD358 /* Build configuration list for PBXNativeTarget "PollfishMoPubAdapterExampleObjC" */;
+			buildPhases = (
+				8085EC9125E7D49800BDD358 /* Sources */,
+				8085EC9225E7D49800BDD358 /* Frameworks */,
+				8085EC9325E7D49800BDD358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PollfishMoPubAdapterExampleObjC;
+			productName = PollfishMoPubAdapterExampleObjC;
+			productReference = 8085EC9525E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8085EC8D25E7D49800BDD358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8085EC9425E7D49800BDD358 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 8085EC9025E7D49800BDD358 /* Build configuration list for PBXProject "PollfishMoPubAdapterExampleObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8085EC8C25E7D49800BDD358;
+			productRefGroup = 8085EC9625E7D49800BDD358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8085EC9425E7D49800BDD358 /* PollfishMoPubAdapterExampleObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8085EC9325E7D49800BDD358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8085ECA825E7D49A00BDD358 /* LaunchScreen.storyboard in Resources */,
+				8085ECA525E7D49A00BDD358 /* Assets.xcassets in Resources */,
+				8085ECA325E7D49800BDD358 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8085EC9125E7D49800BDD358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8085ECA025E7D49800BDD358 /* ViewController.m in Sources */,
+				8085ECC125E7D63D00BDD358 /* File.swift in Sources */,
+				8085EC9A25E7D49800BDD358 /* AppDelegate.m in Sources */,
+				8085ECAB25E7D49A00BDD358 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8085ECA125E7D49800BDD358 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8085ECA225E7D49800BDD358 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8085ECA625E7D49A00BDD358 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8085ECA725E7D49A00BDD358 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8085ECAC25E7D49A00BDD358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8085ECAD25E7D49A00BDD358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8085ECAF25E7D49A00BDD358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 984ZRM32BG;
+				INFOPLIST_FILE = PollfishMoPubAdapterExampleObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishMoPubAdapterExampleObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PollfishMoPubAdapterExampleObjC/PollfishMoPubAdapterExampleObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8085ECB025E7D49A00BDD358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 984ZRM32BG;
+				INFOPLIST_FILE = PollfishMoPubAdapterExampleObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishMoPubAdapterExampleObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PollfishMoPubAdapterExampleObjC/PollfishMoPubAdapterExampleObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8085EC9025E7D49800BDD358 /* Build configuration list for PBXProject "PollfishMoPubAdapterExampleObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8085ECAC25E7D49A00BDD358 /* Debug */,
+				8085ECAD25E7D49A00BDD358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8085ECAE25E7D49A00BDD358 /* Build configuration list for PBXNativeTarget "PollfishMoPubAdapterExampleObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8085ECAF25E7D49A00BDD358 /* Debug */,
+				8085ECB025E7D49A00BDD358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8085EC8D25E7D49800BDD358 /* Project object */;
+}
