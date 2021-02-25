@@ -95,7 +95,7 @@ MPMoPubConfiguration *config = [[MPMoPubConfiguration alloc]
 }];
 ```
 
-Request a RewardedAd from MoPub using the Pollfish configuration params that you provided on MoPub's Web UI (step 2). If no configuration is provided or if want to override any of those params, read step 5.
+Request a RewardedAd from MoPub using the Pollfish configuration params that you provided on MoPub's Web UI (step 2). If no configuration is provided or if you want to override any of those params provided in the Web UI please see step 3.
 
 <span style="text-decoration:underline">Swift</span>
 
@@ -183,10 +183,10 @@ Below you can see all the key-kalue available options of that is used to configu
 
 No | Description
 ------------ | -------------
-5.1 | **`api_key: String`**  <br/> Sets Pollfish SDK API key as provided by Pollfish
-5.2 | **`request_uuid: Bool`**  <br/> Sets a unique id to identify a user and be passed through server-to-server callbacks
-5.3 | **`release_mode: Bool`**  <br/> Sets Pollfish SDK to Developer or Release mode
-5.4 | **`offerwall_mode: Bool`** <br/> Sets Pollfish SDK to Oferwall Mode  
+3.1 | **`api_key: String`**  <br/> Sets Pollfish SDK API key as provided by Pollfish
+3.2 | **`request_uuid: Bool`**  <br/> Sets a unique id to identify a user and be passed through server-to-server callbacks
+3.3 | **`release_mode: Bool`**  <br/> Sets Pollfish SDK to Developer or Release mode
+3.4 | **`offerwall_mode: Bool`** <br/> Sets Pollfish SDK to Oferwall Mode  
 
 <br/>
 
