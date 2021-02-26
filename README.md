@@ -95,7 +95,7 @@ MPMoPubConfiguration *config = [[MPMoPubConfiguration alloc]
 }];
 ```
 
-Request a RewardedAd from MoPub using the Pollfish configuration params that you provided on MoPub's Web UI (step 2). If no configuration is provided or if you want to override any of those params provided in the Web UI please see step 3.
+Request a RewardedAd from MoPub using the Pollfish configuration params that you provided on MoPub's Web UI. If no configuration is provided or if you want to override any of those params provided in the Web UI please see step 3.
 
 <span style="text-decoration:underline">Swift</span>
 
@@ -210,6 +210,12 @@ Sets Pollfish SDK to Developer or Release mode.
 *   **Release mode** is the mode to be used for a released app in any app store (start receiving paid surveys).
 
 Pollfish MoPub Adapter runs Pollfish SDK in release mode by default. If you would like to test with Test survey, you should set release mode to fasle.
+
+### **3.4 `offerwall_mode`**
+
+Enables offerwall mode. If not set, one single survey is shown each time.
+
+<br>
 
 Below you can see an example on how you can pass info to Pollfish MoPub Adapter connfiguration:
 
