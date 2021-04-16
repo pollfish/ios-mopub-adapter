@@ -9,7 +9,7 @@ import MoPubSDK
 import Pollfish
 
 @objc(MoPubRewardedAdPollifsh)
-public class MoPubRewardedAdPollifsh: MPFullscreenAdAdapter, MPThirdPartyFullscreenAdAdapter {
+public class MoPubRewardedAdPollifsh: MPFullscreenAdAdapter, MPThirdPartyFullscreenAdAdapter, PollfishDelegate {
     
     override public var isRewardExpected: Bool {
         return true
@@ -40,84 +40,31 @@ public class MoPubRewardedAdPollifsh: MPFullscreenAdAdapter, MPThirdPartyFullscr
             return
         }
         
-        let params = PollfishParams()
-        params.indicatorPosition = Int32(PollfishPosition.PollFishPositionMiddleRight.rawValue)
-        params.releaseMode = adapterInfo.releaseMode
-        params.rewardMode = true
+        let params = PollfishParams(adapterInfo.apiKey)
+            .indicatorPosition(.middleRight)
+            .releaseMode(adapterInfo.releaseMode)
+            .rewardMode(true)
         
         if let requestUUID = adapterInfo.requestUUID {
-            params.requestUUID = requestUUID
+            params.requestUUID(requestUUID)
         }
         
-        params.offerwallMode = adapterInfo.offerwallMode
+        params.offerwallMode(adapterInfo.offerwallMode)
         
         if let rootView = UIApplication.shared.windows.last?.window?.rootViewController?.view {
-            params.pollfishViewContainer = rootView
+            params.viewContainer(rootView)
         }
         
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishNotAvailable),
-            name: NSNotification.Name(rawValue: "PollfishSurveyNotAvailable"),
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishSurveyCompleted),
-            name: NSNotification.Name(rawValue: "PollfishSurveyCompleted"),
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishSurveyReceived),
-            name: NSNotification.Name(rawValue: "PollfishSurveyReceived"),
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishOpened),
-            name: NSNotification.Name(rawValue: "PollfishOpened"),
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishClosed),
-            name: NSNotification.Name(rawValue: "PollfishClosed"),
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishUserNotEligible),
-            name: NSNotification.Name(rawValue: "PollfishUserNotEligible"),
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(pollfishUserRejectedSurvey),
-            name: NSNotification.Name(rawValue: "PollfishUserRejectedSurvey"),
-            object: nil)
-        
-        Pollfish.initWithAPIKey(adapterInfo.apiKey, andParams: params)
+        Pollfish.initWith(params, delegate: self)
     }
     
     @objc override public func presentAd(from viewController: UIViewController) {
         Pollfish.show()
     }
     
-    @objc func pollfishNotAvailable(_ notification: NSNotification) {
-        let error = PollfishMoPubAdapterError.surveyNotAvailable
-        
-        MPLogging.logEvent(MPLogEvent(message: error.description, level: .debug),
-                           source: nil, from: self.classForCoder)
-        
-        self.delegate?.fullscreenAdAdapter(
-            self,
-            didFailToShowAdWithError: error)
-    }
-    
-    @objc func pollfishSurveyCompleted(_ notification: NSNotification) {
-        let rewardValue = notification.userInfo?["reward_value"] as? Int
-        let rewardCurrency = notification.userInfo?["reward_name"] as? String
+    public func pollfishSurveyCompleted(surveyInfo: SurveyInfo) {
+        let rewardValue = surveyInfo.rewardValue
+        let rewardCurrency = surveyInfo.rewardName
         
         guard let reward = MPReward(currencyType: rewardCurrency,
                                     amount: rewardValue as NSNumber?) else { return }
@@ -128,28 +75,28 @@ public class MoPubRewardedAdPollifsh: MPFullscreenAdAdapter, MPThirdPartyFullscr
         self.delegate?.fullscreenAdAdapter(self, willRewardUser: reward)
     }
     
-    @objc func pollfishSurveyReceived(_ notification: NSNotification) {
+    public func pollfishSurveyReceived(surveyInfo: SurveyInfo?) {
         MPLogging.logEvent(MPLogEvent(message: "Survey Received", level: .debug),
                            source: nil, from: self.classForCoder)
         
         self.delegate?.fullscreenAdAdapterDidLoadAd(self)
     }
     
-    @objc func pollfishOpened(_ notification: NSNotification) {
+    public func pollfishOpened() {
         MPLogging.logEvent(MPLogEvent(message: "Survey Opened", level: .debug),
                            source: nil, from: self.classForCoder)
         
         self.delegate?.fullscreenAdAdapterAdDidAppear(self)
     }
     
-    @objc func pollfishClosed(_ notification: NSNotification) {
+    public func pollfishClosed() {
         MPLogging.logEvent(MPLogEvent(message: "Survey Closed", level: .debug),
                            source: nil, from: self.classForCoder)
         
         self.delegate?.fullscreenAdAdapterAdDidDisappear(self)
     }
     
-    @objc func pollfishUserNotEligible(_ notification: NSNotification) {
+    public func pollfishUserNotEligible() {
         MPLogging.logEvent(MPLogEvent(message: "User Not Eligible", level: .debug),
                            source: nil, from: self.classForCoder)
         
@@ -157,7 +104,7 @@ public class MoPubRewardedAdPollifsh: MPFullscreenAdAdapter, MPThirdPartyFullscr
         self.delegate?.fullscreenAdAdapterAdDidDismiss(self)
     }
     
-    @objc func pollfishUserRejectedSurvey(_ notification: NSNotification) {
+    public func pollfishUserRejectedSurvey() {
         MPLogging.logEvent(MPLogEvent(message: "User Rejected Survey", level: .debug),
                            source: nil, from: self.classForCoder)
         
@@ -165,8 +112,15 @@ public class MoPubRewardedAdPollifsh: MPFullscreenAdAdapter, MPThirdPartyFullscr
         self.delegate?.fullscreenAdAdapterAdDidDismiss(self)
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
+    public func pollfishSurveyNotAvailable() {
+        let error = PollfishMoPubAdapterError.surveyNotAvailable
+        
+        MPLogging.logEvent(MPLogEvent(message: error.description, level: .debug),
+                           source: nil, from: self.classForCoder)
+        
+        self.delegate?.fullscreenAdAdapter(
+            self,
+            didFailToShowAdWithError: error)
     }
     
 }

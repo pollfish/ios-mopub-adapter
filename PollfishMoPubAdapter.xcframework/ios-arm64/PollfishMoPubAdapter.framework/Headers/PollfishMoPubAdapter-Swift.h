@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import MoPubSDK;
+@import Pollfish;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -207,12 +208,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIViewController;
+@class SurveyInfo;
 
 SWIFT_CLASS_NAMED("MoPubRewardedAdPollifsh")
-@interface MoPubRewardedAdPollifsh : MPFullscreenAdAdapter <MPThirdPartyFullscreenAdAdapter>
+@interface MoPubRewardedAdPollifsh : MPFullscreenAdAdapter <MPThirdPartyFullscreenAdAdapter, PollfishDelegate>
 @property (nonatomic, readonly) BOOL isRewardExpected;
 - (void)requestAdWithAdapterInfo:(NSDictionary * _Nonnull)info adMarkup:(NSString * _Nullable)adMarkup;
 - (void)presentAdFromViewController:(UIViewController * _Nonnull)viewController;
+- (void)pollfishSurveyCompletedWithSurveyInfo:(SurveyInfo * _Nonnull)surveyInfo;
+- (void)pollfishSurveyReceivedWithSurveyInfo:(SurveyInfo * _Nullable)surveyInfo;
+- (void)pollfishOpened;
+- (void)pollfishClosed;
+- (void)pollfishUserNotEligible;
+- (void)pollfishUserRejectedSurvey;
+- (void)pollfishSurveyNotAvailable;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
