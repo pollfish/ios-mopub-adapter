@@ -4,6 +4,6 @@
 target 'PollfishMoPubAdapter' do
   use_frameworks!
 
-  pod 'Pollfish', '~> 6.0.0'
+  pod 'Pollfish', '~> 6.0.1'
   pod 'mopub-ios-sdk'
 end
