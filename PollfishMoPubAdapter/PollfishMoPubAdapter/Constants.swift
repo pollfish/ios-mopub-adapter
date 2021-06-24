@@ -9,9 +9,9 @@ import Foundation
 
 struct Constants {
     
-    static let version = "6.1.2.0"
+    static let version = "6.0.3.0"
     static let netwrokName = "pollfish"
-    static let pollfishVersion = "6.1.2"
+    static let pollfishVersion = "6.0.3"
     
     struct ExtraKey {
         static let apiKey = "api_key"
