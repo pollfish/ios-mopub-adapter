@@ -22,17 +22,15 @@
 
 - (void) initializeMoPub {
     [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-        if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
-            MPMoPubConfiguration *config = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization: adUnitid];
-            
-            [config setAdditionalNetworks:@[PollfishAdapterConfiguration.class]];
-            
-            [[MoPub sharedInstance] initializeSdkWithConfiguration: config completion:^(void) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self loadAd];
-                });
-            }];
-        }
+        MPMoPubConfiguration *config = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization: adUnitid];
+        
+        [config setAdditionalNetworks:@[PollfishAdapterConfiguration.class]];
+        
+        [[MoPub sharedInstance] initializeSdkWithConfiguration: config completion:^(void) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self loadAd];
+            });
+        }];
     }];
 }
 

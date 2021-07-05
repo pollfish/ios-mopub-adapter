@@ -8,6 +8,7 @@
 import UIKit
 import MoPubSDK
 import PollfishMoPubAdapter
+import AppTrackingTransparency
 
 class ViewController: UIViewController {
     
@@ -28,11 +29,9 @@ class ViewController: UIViewController {
         config.loggingLevel = .debug
         
         ATTrackingManager.requestTrackingAuthorization { status in
-            if status == .authorized {
-                MoPub.sharedInstance().initializeSdk(with: config) {
-                    DispatchQueue.main.async {
-                        self.loadAd()
-                    }
+            MoPub.sharedInstance().initializeSdk(with: config) {
+                DispatchQueue.main.async {
+                    self.loadAd()
                 }
             }
         }
