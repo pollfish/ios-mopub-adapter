@@ -1,0 +1,41 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PollfishMoPubAdapter
+import Foundation
+import MoPubSDK
+import Pollfish
+@_exported import PollfishMoPubAdapter
+import Swift
+@_inheritsConvenienceInitializers @objc(MoPubRewardedAdPollifsh) public class MoPubRewardedAdPollifsh : MoPubSDK.MPFullscreenAdAdapter, MoPubSDK.MPThirdPartyFullscreenAdAdapter, Pollfish.PollfishDelegate {
+  @objc override dynamic public var isRewardExpected: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func requestAd(withAdapterInfo info: [Swift.AnyHashable : Any], adMarkup: Swift.String?)
+  @objc override dynamic public func presentAd(from viewController: UIKit.UIViewController)
+  @objc public func pollfishSurveyCompleted(surveyInfo: Pollfish.SurveyInfo)
+  @objc public func pollfishSurveyReceived(surveyInfo: Pollfish.SurveyInfo?)
+  @objc public func pollfishOpened()
+  @objc public func pollfishClosed()
+  @objc public func pollfishUserNotEligible()
+  @objc public func pollfishUserRejectedSurvey()
+  @objc public func pollfishSurveyNotAvailable()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PollfishAdapterConfiguration : MoPubSDK.MPBaseAdapterConfiguration {
+  @objc override dynamic public var adapterVersion: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public var biddingToken: Swift.String? {
+    @objc get
+  }
+  @objc override dynamic public var moPubNetworkName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public var networkSdkVersion: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public func initializeNetwork(withConfiguration configuration: [Swift.String : Any]?, complete: ((Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}

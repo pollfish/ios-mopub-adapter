@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name                  = 'PollfishMoPubAdapter'
-    s.version               = '6.0.3.0'
+    s.version               = '6.1.0.0'
     s.summary               = 'Pollfish iOS Adapter for MoPub Mediation'
     s.module_name           = 'PollfishMoPubAdapter'
     s.description           = 'Adapter for publishers looking to use MoPub mediation to load and show Rewarded Surveys from Pollfish in the same waterfall with other Rewarded Ads.'
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
     s.swift_versions        = ['5.3']
 
     s.vendored_frameworks   = 'PollfishMoPubAdapter.xcframework'
-    s.dependencies          = { 'Pollfish'=> "~> 6.0.3", 'mopub-ios-sdk'=> '>= 5.13'}
+    s.dependencies          = { 'Pollfish'=> "~> 6.1.0", 'mopub-ios-sdk'=> '>= 5.17'}
 
-    s.pod_target_xcconfig   = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+    s.pod_target_xcconfig   = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
     
 end
