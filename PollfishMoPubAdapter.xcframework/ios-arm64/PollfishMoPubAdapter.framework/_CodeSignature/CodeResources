@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VgK2qfmb+b8XsrSzy4ktrbb7Ii0=
+		ND+wLHbSgrL7rNOQ7iWrBXwykbY=
 		</data>
 		<key>Modules/PollfishMoPubAdapter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/PollfishMoPubAdapter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0I+z1bjGVaollAR4IEk/nqehd78=
+		o+FC91XAnat3xGCKliFtBW3ZLgc=
 		</data>
 		<key>Modules/PollfishMoPubAdapter.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/PollfishMoPubAdapter.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		0I+z1bjGVaollAR4IEk/nqehd78=
+		o+FC91XAnat3xGCKliFtBW3ZLgc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0I+z1bjGVaollAR4IEk/nqehd78=
+			o+FC91XAnat3xGCKliFtBW3ZLgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ScRvLHPm0ENE+gQKPHnqktJtHAlKkLcTLeFH0BwbYj0=
+			JJBnRNJQ2okw7PrzxOzSPG6pLKWyO5Yyaz9IoXZQ/MM=
 			</data>
 		</dict>
 		<key>Modules/PollfishMoPubAdapter.swiftmodule/arm64.swiftdoc</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0I+z1bjGVaollAR4IEk/nqehd78=
+			o+FC91XAnat3xGCKliFtBW3ZLgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ScRvLHPm0ENE+gQKPHnqktJtHAlKkLcTLeFH0BwbYj0=
+			JJBnRNJQ2okw7PrzxOzSPG6pLKWyO5Yyaz9IoXZQ/MM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
